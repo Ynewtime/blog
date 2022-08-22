@@ -11,7 +11,7 @@ export default defineConfig({
       'meta',
       {
         name: 'twitter:image',
-        content: 'https://www.ynewtime.com/background.jpg'
+        content: 'https://blog.cros3hadow.org/icon.png'
       }
     ],
     [
@@ -31,7 +31,7 @@ export default defineConfig({
   markdown: {
     config: (md) => {
       // use more markdown-it plugins!
-      md.use(taskLists, { label: true })
+      md.use(taskLists)
     }
   }
 })
