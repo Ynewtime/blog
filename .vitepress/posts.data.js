@@ -1,8 +1,9 @@
 import fs from 'fs'
-import path from 'path'
 import matter from 'gray-matter'
-import { createMarkdownRenderer } from 'vitepress'
+import path from 'path'
 import { fileURLToPath } from 'url'
+import { createMarkdownRenderer } from 'vitepress'
+import { mdConfig } from './utils'
 
 let md
 
@@ -11,7 +12,7 @@ const dirname = path.dirname(fileURLToPath(import.meta.url))
 export default {
   watch: '../posts/*.md',
   async load(asFeed = false) {
-    md = md || (await createMarkdownRenderer(process.cwd()))
+    md = md || (await createMarkdownRenderer(process.cwd(), mdConfig))
     const postDir = path.resolve(dirname, '../posts')
     return fs
       .readdirSync(postDir)

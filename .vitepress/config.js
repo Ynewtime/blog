@@ -1,5 +1,5 @@
-import taskLists from 'markdown-it-task-lists'
 import { defineConfig } from 'vitepress'
+import { mdConfig } from './utils'
 
 export default defineConfig({
   title: '便笺',
@@ -28,10 +28,5 @@ export default defineConfig({
       // minify: 'terser'
     }
   },
-  markdown: {
-    config: (md) => {
-      // use more markdown-it plugins!
-      md.use(taskLists)
-    }
-  }
+  markdown: mdConfig
 })
