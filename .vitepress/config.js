@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { mdConfig } from './utils'
+import { mdConfig } from './utils.js'
 
 export default defineConfig({
   title: '便笺',

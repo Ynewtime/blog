@@ -3,7 +3,7 @@ import matter from 'gray-matter'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import { createMarkdownRenderer } from 'vitepress'
-import { mdConfig } from './utils'
+import { mdConfig } from './utils.js'
 
 let md
 
