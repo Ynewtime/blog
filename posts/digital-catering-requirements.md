@@ -10,16 +10,21 @@ Sprint
 + [ ] 0823,在线签约系统
 
 其他需求
++ [ ] 0826,新加坡开发态部署
 + [ ] 0825,PLINK系统，新增缺陷管理和 HQ Experience KPI Post
 + [ ] 0824,查看新面试CV并约面试
 + [ ] 0824,汪部长的APP注册登录功能
 
 内部测试遗留问题
++ [ ] 0826,配置 public.bingo.login.url 的内置系统参数 => 勇刚，待确认，当前毛球没有这个内置参数
++ [x] 0826,Homepage 首页 Banner 加载不出来 => Cavid
 + [ ] 0824,OrderList - 总金额包括了TIPS，应该去掉
-+ [ ] 0823,OrderReport - 表格样式优化
-+ [ ] 0822,OrderReport - OrderReport 导出数据对不上 StoreReport
++ [x] 0823,OrderReport - 表格样式优化
++ [x] 0822,OrderReport - OrderReport 导出数据对不上 StoreReport
 
+-
 商户反馈
++ [ ] 0829,退菜后厨提醒
 + [ ] 0822,宽窄 - 小票抬头显示商家订餐电话、地址、MPESA付款信息
 + [ ] 0822,宽窄 - 小票菜品要包含品名、单价、数量和总额
 + [ ] 0822,宽窄 - 小票要区分未付款和已付款单
