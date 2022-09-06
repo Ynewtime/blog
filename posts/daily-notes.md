@@ -6,18 +6,17 @@ gravatar: 41d81fdc8f8d5e887f6332b8d4a379e6
 twitter: '@Ynewtime'
 ---
 
+2022-09-06
+
++ [ ] QAOPEN 系统搬迁
+
 2022-09-02
 
 + [ ] 09-01 15:30 Java House 咖啡订单报销
 + [ ] 收入预测跟踪 - 黄波，拆分保底、中性、挑战和历史欠款
-
-2022-09-02
-
 + [ ] 自动爬取脚本新增统计日志功能
 
 2022-09-01
-
-+ [ ] QAOPEN 系统搬迁
 
 + 打印机工具修复了一些问题，增加了记录日志文件的功能
 + 零码能力展示需要内部先讨论下场景选择
@@ -79,36 +78,3 @@ twitter: '@Ynewtime'
 + [x] 21:40 经营系统数据校正
 
 ---
-
-数字化工具开发需求清单
-1. 区域 EOX 局点在线维护工具（构建一个 EOX 维护工具，支持 EOX 信息录入、在线可视和权限管控）
-2. 现有运维大屏、合营看板和资源平台的日常维护（不涉及新的重需求开发，主要围绕现有工具的维护和数据刷新）
-
-进销存需求沟通准备
-1. PSI System: Purchase Sales Inventory
-2. [Stock Management] + [Materials-to-Dishes binding System]
-3. Item: aka. Material, which is the raw meterials used in the Dishes
-4. Bill of Material: Materials-to-Dishes
-
-Homepage 安装
-1. Operation Center
-2. Homepage
-
-Order Delete 权限
-1. 只允许配置 Manager，Cashier 和 Waiter 都禁用掉
-2. Order Delete 权限是 Order Manage 权限的子集，只禁用 Delete 权限而不禁用 Manage 权限是错误的
-
-经营系统数据校正
-+ 如果代表处的收入预测值与其他各个维度的收入预测值都不同，但是订货和成本都相同，主要原因可能是某个项目的代表处为空或者放到了南部非洲地区部总部，此时需要分月排查收入预测值误差，然后筛选出对应的项目预测条目，看代表处有没有放错
-
-零码内部演示
-1. 演示部分增加客户互动
-2. 新增 Process 流程类应用展示
-3. 演示时间较短，可以多拓展一下，如问卷调查表单在编辑的时候，可以多看一些组件
-
-AppCube问题记录
-1. 接口报错【接口未开放】: 原因是尚未配置业务权限凭证，1.3.10新特性
-2. 软件包安装报错【解析结果失败】: 华为云WAF规则误判，联系安全运维马磊(wx791372)或易建华(00574162)修复
-
-肯尼亚和土研所团队的缺陷和需求管理
-+ 后续统一用 P-Link 系统承载
