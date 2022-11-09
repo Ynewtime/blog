@@ -4,7 +4,7 @@
 
 :root {
   --c-brand: theme('colors.red.800');
-  --c-brand-light: theme('colors.red.700');
+  --c-brand-light: theme('colors.red.600');
 }
 
 nav img {
@@ -114,4 +114,11 @@ p img {
 
 .token.inserted {
   color: #67cdcc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-brand: theme('colors.red.500');
+    --c-brand-light: theme('colors.red.300');
+  }
 }

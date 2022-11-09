@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue'
 import { useRoute } from 'vitepress'
 import Home from './Home.vue'
@@ -11,29 +11,17 @@ const isNotFound = computed(() => route.component === NotFound)
 </script>
 
 <template>
-  <div class="antialiased">
+  <div class="antialiased min-h-screen dark:bg-slate-900">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
       <nav class="flex justify-between items-center py-10 font-bold">
-        <a class="text-xl" href="/" aria-label="便笺">
-          <img
-            class="inline-block mr-2 w-8 rounded-full border"
-            alt="logo"
-            src="/logo.png"
-          />
-          <span v-if="!isIndex" class="hidden md:inline">便笺</span>
+        <a class="text-xl flex items-center" href="/" aria-label="便笺">
+          <img class="inline-block mr-2" style="width: 24px; height: 24px" alt="logo" src="/logo.svg" />
+          <span v-if="!isIndex" class="hidden md:inline dark:text-white">便笺</span>
         </a>
-        <div class="text-sm text-gray-500 leading-5">
-          <a
-            class="hover:text-gray-700"
-            href="https://github.com/Ynewtime"
-            target="_blank"
-            rel="noopener"
-            >GitHub</a
-          >
+        <div class="text-sm text-gray-500 dark:text-white leading-5">
+          <a class="hover:text-gray-700 dark:hover:text-gray-200" href="https://github.com/Ynewtime" target="_blank" rel="noopener">GitHub</a>
           <span class="mr-2 ml-2">·</span>
-          <a class="hover:text-gray-700" href="/feed.rss"
-            >RSS<span class="hidden sm:inline"> Feed</span></a
-          >
+          <a class="hover:text-gray-700 dark:hover:text-gray-200" href="/feed.rss">RSS<span class="hidden sm:inline"> Feed</span></a>
         </div>
       </nav>
     </div>

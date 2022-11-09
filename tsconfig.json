@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-    "allowJs": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
     "jsx": "preserve"
   },
   "include": ["./.vitepress/**/*"]

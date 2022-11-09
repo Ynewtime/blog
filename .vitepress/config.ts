@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { mdConfig } from './utils.js'
+import { mdConfig } from './utils'
 
 export default defineConfig({
   title: '便笺',
@@ -23,10 +23,5 @@ export default defineConfig({
       }
     ]
   ],
-  vite: {
-    build: {
-      // minify: 'terser'
-    }
-  },
   markdown: mdConfig
 })
