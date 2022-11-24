@@ -44,6 +44,8 @@ AppCube问题记录
 肯尼亚和土研所团队的缺陷和需求管理
 + 后续统一用 P-Link 系统承载
 
+---
+
 ### 2022-05-27
 
 AppCube 总结 from 汤勇刚
@@ -59,7 +61,7 @@ AppCube 总结 from 汤勇刚
 
 1、使用 VS Code 的 Rest 插件上传 Binary
 
-```
+```markdown
 POST {{url}}
 Content-Type: image/png
 Access-Token: {{token}}
@@ -71,7 +73,7 @@ Access-Token: {{token}}
 
 假定上传的 Form Data 包含 name 和 file 字段
 
-```
+```markdown
 ###
 POST {{url}}
 Access-Token: {{token}}
@@ -144,8 +146,6 @@ React 性能优化技巧
    2. 比如复制匹配到的子串: `"abc".replace("abc", "$&$&")` => `abcabc`
    3. 或者复制匹配到的子串前的字符串: "123abc".replace("abc", "$`") => 123123
    4. 或者复制匹配到的子串后的字符串: "123abc456".replace("abc", "$'") => `123456456`
-
----
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#specifying_a_string_as_a_parameter
 [2]: http://xinsheng.huawei.com/cn/index.php?app=forum&mod=Detail&act=index&id=7622627#:~:text=%E4%B8%8A%E5%8D%8A%E5%B9%B4%EF%BC%8C%E8%BF%9B%E4%B8%80%E6%AD%A5%E6%8A%8A%E2%80%9C-,%E6%89%93%E7%A3%A8%E4%BA%A7%E5%93%81%E3%80%81%E6%8F%90%E5%8D%87%E4%BD%93%E9%AA%8C,-%E2%80%9D%E4%BD%9C%E4%B8%BATOP1%E7%9A%84
